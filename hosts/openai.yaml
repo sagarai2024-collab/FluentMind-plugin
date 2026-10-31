@@ -2,11 +2,11 @@
 # Lives in hosts/ rather than agents/: in Claude plugin format, agents/ means subagents.
 author: "Sagarika Chakraborty"
 skills:
-  - name: humanise
+  - name: fluentmind
     interface:
-      display_name: "Humanise"
+      display_name: "FluentMind"
       short_description: "Rewrite AI-shaped prose so it sounds like the writer"
-      default_prompt: "Use $humanise to rewrite this draft so it sounds like me, keeping every fact."
+      default_prompt: "Use $fluentmind to rewrite this draft so it sounds like me, keeping every fact."
     policy:
       allow_implicit_invocation: true
   - name: meeting-talk

@@ -6,14 +6,14 @@ Restructure. Same editing philosophy, less context per invocation, and a second 
 
 ### Breaking
 
-- Split into two skills. `humanise` rewrites prose; `meeting-talk` produces spoken lines. The meeting route is no longer a section inside `humanise`, and `meeting-pack.md` moved to `skills/meeting-talk/references/`.
+- Split into two skills. `fluentmind` rewrites prose; `meeting-talk` produces spoken lines. The meeting route is no longer a section inside `fluentmind`, and `meeting-pack.md` moved to `skills/meeting-talk/references/`.
 - `agents/openai.yaml` moved to `hosts/openai.yaml`. In Claude plugin format `agents/` means subagents, so the old location was a naming collision.
 - `evals/evals.json` replaced by per-case directories at the package root, each with `prompt.md`, `case.yaml`, and `graders/`. The suite is now scoreable instead of prose-only.
 - Version and author are declared once, in `.claude-plugin/plugin.json`. Removed from skill frontmatter bodies, references, and the validator's hardcoded constant.
 
 ### Added
 
-- Four slash commands: `/humanise:humanise`, `/humanise:talk-track`, `/humanise:pushback`, `/humanise:audit`.
+- Four slash commands: `/fluentmind:fluentmind`, `/fluentmind:talk-track`, `/fluentmind:pushback`, `/fluentmind:audit`.
 - Edit-intensity dial (light, standard, heavy) with standard as the default, selected by tell count or by the user.
 - Do-no-harm stop rule. Under two tells, the text comes back substantially unchanged, and trading one tell for another counts as a failed edit.
 - Length contract. Output stays within 85 to 115 percent of input unless the user asked otherwise; large cuts are surfaced rather than made silently.
@@ -35,4 +35,4 @@ Restructure. Same editing philosophy, less context per invocation, and a second 
 
 ## 1.1.0
 
-- Single `humanise` skill with a 25-pattern catalogue, a meeting reference, portability notes, 20 prose evals, and a structural validator.
+- Single `fluentmind` skill with a 25-pattern catalogue, a meeting reference, portability notes, 20 prose evals, and a structural validator.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the humanise plugin package. No third-party dependencies.
+"""Validate the fluentmind plugin package. No third-party dependencies.
 
 Run from anywhere:  python3 scripts/validate_skill.py
 """
@@ -20,7 +20,7 @@ FRONTMATTER_KEYS = {"name", "description", "metadata", "allowed-tools", "license
 MANIFEST = ROOT / ".claude-plugin" / "plugin.json"
 
 SKILLS = {
-    "humanise": {
+    "fluentmind": {
         "required": [
             "references/pattern-catalogue.md",
             "references/channel-register.md",
@@ -53,34 +53,34 @@ SKILLS = {
             "SCQ",
             "Three to five",
             "evidence gap",
-            "humanise",  # hand-off to the sibling skill
+            "fluentmind",  # hand-off to the sibling skill
         ],
         "anti_markers": [
-            "pattern catalogue",  # belongs to humanise, not here
+            "pattern catalogue",  # belongs to fluentmind, not here
         ],
     },
 }
 
 REFERENCE_MARKERS = {
-    "skills/humanise/references/pattern-catalogue.md": [
+    "skills/fluentmind/references/pattern-catalogue.md": [
         "Not X but Y",
         "weak alone",
         "Dashes as the universal connector",
     ],
-    "skills/humanise/references/channel-register.md": [
+    "skills/fluentmind/references/channel-register.md": [
         "Slack",
         "PRD",
         "Commit message",
         "Executive update",
     ],
-    "skills/humanise/references/portability.md": [
+    "skills/fluentmind/references/portability.md": [
         "Codex",
         "ChatGPT",
         "Claude",
-        ".agents/skills/humanise",
-        "$humanise",
-        "@humanise",
-        "/humanise",
+        ".agents/skills/fluentmind",
+        "$fluentmind",
+        "@fluentmind",
+        "/fluentmind",
     ],
     "skills/meeting-talk/references/meeting-pack.md": [
         "Claim -> proof -> implication -> ask",
@@ -91,7 +91,7 @@ REFERENCE_MARKERS = {
     ],
 }
 
-COMMANDS = ("humanise.md", "talk-track.md", "pushback.md", "audit.md")
+COMMANDS = ("fluentmind.md", "talk-track.md", "pushback.md", "audit.md")
 
 ROOT_FILES = ("README.md", "CHANGELOG.md", "LICENSE", ".gitignore")
 
@@ -216,7 +216,7 @@ def check_references(errors: list[str]) -> None:
             if marker not in text:
                 errors.append(f"{relative} is missing marker: {marker}")
 
-    catalogue = ROOT / "skills/humanise/references/pattern-catalogue.md"
+    catalogue = ROOT / "skills/fluentmind/references/pattern-catalogue.md"
     if catalogue.is_file():
         found = len(re.findall(r"^### \d+\. ", catalogue.read_text(encoding="utf-8"), re.MULTILINE))
         if found != EXPECTED_PATTERN_COUNT:

@@ -1,5 +1,5 @@
 {
-  "name": "humanise",
+  "name": "fluentmind",
   "version": "2.0.0",
   "description": "Rewrites AI-shaped prose so it reads like the writer, preserving every fact, and turns meeting, pitch, and stakeholder material into crisp lines you can say out loud.",
   "author": {
@@ -9,7 +9,7 @@
   "keywords": [
     "writing",
     "editing",
-    "humanise",
+    "fluentmind",
     "humanize",
     "prose",
     "voice",

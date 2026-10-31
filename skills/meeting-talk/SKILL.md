@@ -1,6 +1,6 @@
 ---
 name: meeting-talk
-description: Turns a position, a set of facts, or a rough argument into crisp lines you can actually say out loud in a meeting. Use this whenever someone asks how to pitch something, how to present or open a meeting, what to say to a stakeholder, exec, director, or customer, how to defend or prove a point, how to handle pushback or an objection, how to ask for headcount, budget, priority, or a decision, or asks for talking points, a talk track, a 30-second or 2-minute version, or "what do I say when they ask X". Also use it when someone has the facts but not the words. It returns spoken bullets, the proof under each, likely pushback, and a concrete ask. Do not use it to rewrite prose a reader will read rather than hear (use humanise), and do not use it to invent business impact, metrics, or stakeholder motives that were not supplied.
+description: Turns a position, a set of facts, or a rough argument into crisp lines you can actually say out loud in a meeting. Use this whenever someone asks how to pitch something, how to present or open a meeting, what to say to a stakeholder, exec, director, or customer, how to defend or prove a point, how to handle pushback or an objection, how to ask for headcount, budget, priority, or a decision, or asks for talking points, a talk track, a 30-second or 2-minute version, or "what do I say when they ask X". Also use it when someone has the facts but not the words. It returns spoken bullets, the proof under each, likely pushback, and a concrete ask. Do not use it to rewrite prose a reader will read rather than hear (use fluentmind), and do not use it to invent business impact, metrics, or stakeholder motives that were not supplied.
 metadata:
   author: Sagarika Chakraborty
 ---
@@ -57,7 +57,7 @@ Never fill a gap with invented business impact.
 
 ## Boundaries
 
-- If the request is to rewrite prose a reader will read rather than hear, that is the **humanise** skill. Hand off.
+- If the request is to rewrite prose a reader will read rather than hear, that is the **fluentmind** skill. Hand off.
 - Do not produce a block of generic communication advice when the user asked for lines to say.
 - Do not argue with an objection nobody raised.
 - Do not coach manipulation, pressure tactics, false urgency, or anything that misrepresents the evidence to win the room.
