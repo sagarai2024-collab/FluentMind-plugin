@@ -78,4 +78,4 @@ Everything is plain Markdown with relative references. No tool call, shell, pack
 
 ## Licence
 
-MIT; see [LICENSE](LICENSE). Author: Sagarika Chakraborty. Version lives in `.claude-plugin/plugin.json`.
+All rights reserved, see [LICENSE](LICENSE). Do not copy or reuse without written permission. Author: Sagarika Chakraborty. Version lives in `.claude-plugin/plugin.json`.
